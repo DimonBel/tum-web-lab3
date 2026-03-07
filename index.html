@@ -1,5 +1,5 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
 </head>
-  <body>
-        <!-- Navigation -->
+<body>
+    <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
             <div class="logo">ROCMAN</div>
@@ -20,10 +20,20 @@
                 <li><a href="#blog">Blog</a></li>
             </ul>
             <a href="#contact" class="nav-cta">Get Started</a>
+            <div class="mobile-menu-toggle mobile-only">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </nav>
 
-        <!-- Hero Section -->
+    <!-- Mobile-only FAB -->
+    <div class="mobile-fab mobile-only">
+        <span class="mobile-badge">1</span>
+    </div>
+
+    <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
@@ -42,6 +52,7 @@
             </div>
         </div>
     </section>
+
     <!-- Stats Section -->
     <section class="stats">
         <div class="container">
@@ -101,6 +112,7 @@
             </div>
         </div>
     </section>
+
     <!-- Platform Section -->
     <section class="platform">
         <div class="container">
@@ -152,6 +164,7 @@
             </div>
         </div>
     </section>
+
     <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials">
         <div class="container">
@@ -183,6 +196,7 @@
             </div>
         </div>
     </section>
+
     <!-- Stats Details Section -->
     <section class="stats-details">
         <div class="container">
@@ -206,6 +220,7 @@
             </div>
         </div>
     </section>
+
     <!-- Blog Section -->
     <section id="blog" class="blog">
         <div class="container">
@@ -241,6 +256,7 @@
             </div>
         </div>
     </section>
+
     <!-- Team Section -->
     <section class="team">
         <div class="container">
@@ -273,6 +289,7 @@
             </div>
         </div>
     </section>
+
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
@@ -388,5 +405,31 @@
             </div>
         </div>
     </footer>
-  </body>
+
+    <!-- CSS-Only Mascot -->
+    <div class="mascot">
+        <div class="mascot-tooltip">Hi! I'm ROCBot - your HR assistant! 🤖</div>
+        <div class="mascot-body">
+            <div class="mascot-head">
+                <div class="mascot-face">
+                    <div class="mascot-eye left"></div>
+                    <div class="mascot-eye right"></div>
+                    <div class="mascot-mouth"></div>
+                </div>
+                <div class="mascot-antenna">
+                    <div class="mascot-antenna-ball"></div>
+                </div>
+            </div>
+            <div class="mascot-torso"></div>
+            <div class="mascot-arm left"></div>
+            <div class="mascot-arm right"></div>
+        </div>
+        <div class="mascot-shadow"></div>
+    </div>
+
+    <!-- Mobile-only sticky CTA -->
+    <div class="mobile-sticky-cta mobile-only">
+        <a href="#contact" class="btn btn-primary">Start Free Trial</a>
+    </div>
+</body>
 </html>
