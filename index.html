@@ -4,409 +4,352 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ROCMAN - HR-as-a-Service for SMEs</title>
-    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">ROCMAN</div>
-            <ul class="nav-links">
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#how-it-works">How It Works</a></li>
-                <li><a href="#benefits">Benefits</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#blog">Blog</a></li>
+<body class="bg-white pb-24 font-sans text-[#1e1b4b] antialiased md:pb-0">
+    <nav class="sticky top-0 z-50 border-b border-black/5 bg-white/90 backdrop-blur-xl">
+        <div class="mx-auto flex w-full max-w-[1100px] flex-wrap items-center justify-between gap-4 px-6 py-5 md:flex-nowrap">
+            <div class="text-[1.6rem] font-bold tracking-[-0.5px] text-indigo-500">ROCMAN</div>
+            <ul class="flex flex-wrap items-center justify-center gap-4 text-[0.9rem] text-gray-600 md:gap-10 md:text-[0.95rem]">
+                <li><a href="#home" class="font-medium text-indigo-500 transition hover:text-indigo-500">Home</a></li>
+                <li><a href="#how-it-works" class="font-medium transition hover:text-indigo-500">How It Works</a></li>
+                <li><a href="#benefits" class="font-medium transition hover:text-indigo-500">Benefits</a></li>
+                <li><a href="#testimonials" class="font-medium transition hover:text-indigo-500">Testimonials</a></li>
+                <li><a href="#blog" class="font-medium transition hover:text-indigo-500">Blog</a></li>
             </ul>
-            <a href="#contact" class="nav-cta">Get Started</a>
-            <div class="mobile-menu-toggle mobile-only">
-                <span></span>
-                <span></span>
-                <span></span>
+            <a href="#contact" class="rounded-xl bg-indigo-500 px-6 py-3 text-[0.95rem] font-semibold text-white shadow-[0_2px_8px_rgba(99,102,241,0.3)] transition hover:-translate-y-0.5 hover:bg-indigo-600 hover:shadow-[0_4px_12px_rgba(99,102,241,0.4)]">Get Started</a>
+            <div class="relative block h-8 w-8 cursor-pointer md:hidden">
+                <span class="my-1.5 block h-[3px] w-full rounded bg-[#1e1b4b]"></span>
+                <span class="my-1.5 block h-[3px] w-full rounded bg-[#1e1b4b]"></span>
+                <span class="my-1.5 block h-[3px] w-full rounded bg-[#1e1b4b]"></span>
             </div>
         </div>
     </nav>
 
-    <!-- Mobile-only FAB -->
-    <div class="mobile-fab mobile-only">
-        <span class="mobile-badge">1</span>
+    <div class="fixed bottom-24 right-5 z-40 flex h-14 w-14 items-center justify-center rounded-full bg-indigo-500 shadow-[0_4px_20px_rgba(99,102,241,0.5)] transition hover:scale-110 hover:shadow-[0_6px_25px_rgba(99,102,241,0.6)] md:hidden">
+        <span class="text-2xl">💬</span>
+        <span class="absolute -right-1 -top-1 min-w-[18px] rounded-full bg-red-500 px-1.5 text-center text-[0.7rem] font-bold text-white">1</span>
     </div>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>The first HR-as-a-Service</h1>
-                <h2>built for SMEs</h2>
-                <p>Automate hiring, access pre-qualified candidates, and grow your team — without an internal HR.</p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Start Free Trial</a>
-                    <a href="#how-it-works" class="btn btn-secondary">Learn More</a>
+    <section id="home" class="flex min-h-[85vh] items-center bg-[linear-gradient(135deg,#fdf4ff_0%,#ede9fe_50%,#e0e7ff_100%)] py-16 md:py-20 lg:py-28">
+        <div class="mx-auto grid w-full max-w-[1100px] items-center gap-12 px-6 md:grid-cols-[1.1fr_0.9fr] md:gap-20">
+            <div>
+                <h1 class="mb-3 text-4xl font-extrabold leading-[1.1] tracking-[-1px] text-[#1e1b4b] sm:text-5xl lg:text-[3.8rem]">The first HR-as-a-Service</h1>
+                <h2 class="mb-7 text-2xl font-bold tracking-[-0.5px] text-indigo-500 sm:text-3xl lg:text-[2.2rem]">built for SMEs</h2>
+                <p class="mb-10 max-w-[520px] text-base leading-8 text-gray-600 sm:text-lg">Automate hiring, access pre-qualified candidates, and grow your team - without an internal HR.</p>
+                <div class="flex flex-col gap-3 sm:flex-row">
+                    <a href="#contact" class="inline-block rounded-xl bg-indigo-500 px-8 py-4 text-center text-base font-semibold text-white shadow-[0_4px_14px_rgba(99,102,241,0.4)] transition hover:-translate-y-0.5 hover:bg-indigo-600 hover:shadow-[0_6px_20px_rgba(99,102,241,0.5)]">Start Free Trial</a>
+                    <a href="#how-it-works" class="inline-block rounded-xl border-2 border-indigo-500 bg-white/80 px-8 py-4 text-center text-base font-semibold text-indigo-500 transition hover:-translate-y-0.5 hover:bg-indigo-500 hover:text-white">Learn More</a>
                 </div>
             </div>
-            <div class="hero-image">
-                <div class="hero-visual">
-                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&h=800&fit=crop" alt="Team collaboration" class="hero-img">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Stats Section -->
-    <section class="stats">
-        <div class="container">
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <div class="stat-number">+50%</div>
-                    <div class="stat-label">Better matches, pre-qualified candidates</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">70%</div>
-                    <div class="stat-label">Of recruitment tasks are automated</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">85%</div>
-                    <div class="stat-label">Recruitment costs reduction</div>
+            <div class="order-first flex items-center justify-center md:order-last">
+                <div class="animate-bounce [animation-duration:6s] [animation-iteration-count:infinite] [animation-timing-function:ease-in-out]">
+                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&h=800&fit=crop" alt="Team collaboration" class="h-auto w-full max-w-[280px] rounded-3xl shadow-[0_12px_32px_rgba(0,0,0,0.1)] sm:max-w-[350px] lg:max-w-[500px]">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- How It Works Section -->
-    <section id="how-it-works" class="how-it-works">
-        <div class="container">
-            <div class="section-header">
-                <h2>Automate the recruitment process</h2>
-                <p>Transform the way you recruit with our platform</p>
-            </div>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=200&h=200&fit=crop" alt="Save Time" class="feature-img">
-                    </div>
-                    <h3>Save Time</h3>
-                    <p>Automation reduces time spent on repetitive tasks, allowing you to focus on what matters.</p>
+    <section class="bg-indigo-500 py-14 md:py-20">
+        <div class="mx-auto w-full max-w-[1100px] px-6">
+            <div class="grid gap-8 md:grid-cols-3 md:gap-14">
+                <div class="text-center">
+                    <div class="mb-3 text-4xl font-extrabold tracking-[-1px] text-white sm:text-5xl lg:text-[3.5rem]">+50%</div>
+                    <div class="text-base font-medium text-white/95 sm:text-[1.1rem]">Better matches, pre-qualified candidates</div>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=200&h=200&fit=crop" alt="Reduce Costs" class="feature-img">
-                    </div>
-                    <h3>Reduce Costs</h3>
-                    <p>Eliminating the need for a HR department dedicated to in-house staff.</p>
+                <div class="text-center">
+                    <div class="mb-3 text-4xl font-extrabold tracking-[-1px] text-white sm:text-5xl lg:text-[3.5rem]">70%</div>
+                    <div class="text-base font-medium text-white/95 sm:text-[1.1rem]">Of recruitment tasks are automated</div>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=200&h=200&fit=crop" alt="Flexible & Customizable" class="feature-img">
-                    </div>
-                    <h3>Flexible & Customizable</h3>
-                    <p>Process customization depending on the specifics of each business.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=200&h=200&fit=crop" alt="Dedicated HR Expertise" class="feature-img">
-                    </div>
-                    <h3>Dedicated HR Expertise</h3>
-                    <p>Receive recommendations and real support from your personal HR consultant.</p>
+                <div class="text-center">
+                    <div class="mb-3 text-4xl font-extrabold tracking-[-1px] text-white sm:text-5xl lg:text-[3.5rem]">85%</div>
+                    <div class="text-base font-medium text-white/95 sm:text-[1.1rem]">Recruitment costs reduction</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Platform Section -->
-    <section class="platform">
-        <div class="container">
-            <div class="platform-content">
-                <div class="platform-text">
-                    <h2>One tool - the entire process, simple and efficient</h2>
-                    <p>Automate the recruitment process — from candidate generation, intelligent screening and up to interview scheduling — in one comprehensive platform.</p>
-                    <p>For a fixed subscription, the Concierge service offers you pre-qualified, motivated, and interview-ready candidates.</p>
-                    <p>We combine process automation, artificial intelligence and human support in a full HR-as-a-Service type service, specially designed for SMEs that want to hire efficiently.</p>
-                    <a href="#contact" class="btn btn-primary">Discover how ROCMAN works for your business</a>
+    <section id="how-it-works" class="bg-white py-16 md:py-20 lg:py-28">
+        <div class="mx-auto w-full max-w-[1100px] px-6">
+            <div class="mb-12 text-center md:mb-16 lg:mb-[4.5rem]">
+                <h2 class="mb-3 text-3xl font-bold tracking-[-0.5px] text-[#1e1b4b] sm:text-4xl lg:text-[2.8rem]">Automate the recruitment process</h2>
+                <p class="mx-auto max-w-[600px] text-base text-gray-600 sm:text-lg">Transform the way you recruit with our platform</p>
+            </div>
+            <div class="grid gap-6 md:grid-cols-2">
+                <div class="rounded-2xl border border-transparent bg-gray-50 px-6 py-8 text-center transition hover:-translate-y-1 hover:border-indigo-100 hover:bg-white hover:shadow-[0_12px_32px_rgba(0,0,0,0.1)] md:px-8 md:py-12">
+                    <div class="mb-6"><img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=200&h=200&fit=crop" alt="Save Time" class="mx-auto h-20 w-20 rounded-xl object-cover shadow-sm"></div>
+                    <h3 class="mb-4 text-xl font-semibold text-[#1e1b4b] sm:text-[1.4rem]">Save Time</h3>
+                    <p class="text-gray-600">Automation reduces time spent on repetitive tasks, allowing you to focus on what matters.</p>
                 </div>
-                <div class="platform-visual">
-                    <div class="platform-display">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=800&fit=crop" alt="Analytics Dashboard" class="platform-img">
-                    </div>
+                <div class="rounded-2xl border border-transparent bg-gray-50 px-6 py-8 text-center transition hover:-translate-y-1 hover:border-indigo-100 hover:bg-white hover:shadow-[0_12px_32px_rgba(0,0,0,0.1)] md:px-8 md:py-12">
+                    <div class="mb-6"><img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=200&h=200&fit=crop" alt="Reduce Costs" class="mx-auto h-20 w-20 rounded-xl object-cover shadow-sm"></div>
+                    <h3 class="mb-4 text-xl font-semibold text-[#1e1b4b] sm:text-[1.4rem]">Reduce Costs</h3>
+                    <p class="text-gray-600">Eliminating the need for a HR department dedicated to in-house staff.</p>
+                </div>
+                <div class="rounded-2xl border border-transparent bg-gray-50 px-6 py-8 text-center transition hover:-translate-y-1 hover:border-indigo-100 hover:bg-white hover:shadow-[0_12px_32px_rgba(0,0,0,0.1)] md:px-8 md:py-12">
+                    <div class="mb-6"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=200&h=200&fit=crop" alt="Flexible & Customizable" class="mx-auto h-20 w-20 rounded-xl object-cover shadow-sm"></div>
+                    <h3 class="mb-4 text-xl font-semibold text-[#1e1b4b] sm:text-[1.4rem]">Flexible &amp; Customizable</h3>
+                    <p class="text-gray-600">Process customization depending on the specifics of each business.</p>
+                </div>
+                <div class="rounded-2xl border border-transparent bg-gray-50 px-6 py-8 text-center transition hover:-translate-y-1 hover:border-indigo-100 hover:bg-white hover:shadow-[0_12px_32px_rgba(0,0,0,0.1)] md:px-8 md:py-12">
+                    <div class="mb-6"><img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=200&h=200&fit=crop" alt="Dedicated HR Expertise" class="mx-auto h-20 w-20 rounded-xl object-cover shadow-sm"></div>
+                    <h3 class="mb-4 text-xl font-semibold text-[#1e1b4b] sm:text-[1.4rem]">Dedicated HR Expertise</h3>
+                    <p class="text-gray-600">Receive recommendations and real support from your personal HR consultant.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Benefits Section -->
-    <section id="benefits" class="benefits">
-        <div class="container">
-            <div class="section-header">
-                <h2>Why Choose ROCMAN?</h2>
-                <p>The smarter way to recruit for your business</p>
+    <section class="bg-[linear-gradient(135deg,#fdf4ff_0%,#ede9fe_50%,#e0e7ff_100%)] py-16 md:py-20 lg:py-28">
+        <div class="mx-auto grid w-full max-w-[1100px] items-center gap-12 px-6 md:grid-cols-2 md:gap-20">
+            <div>
+                <h2 class="mb-7 text-3xl font-bold tracking-[-0.5px] text-[#1e1b4b] sm:text-4xl lg:text-[2.5rem]">One tool - the entire process, simple and efficient</h2>
+                <p class="mb-6 text-base leading-8 text-gray-600 sm:text-[1.1rem]">Automate the recruitment process - from candidate generation, intelligent screening and up to interview scheduling - in one comprehensive platform.</p>
+                <p class="mb-6 text-base leading-8 text-gray-600 sm:text-[1.1rem]">For a fixed subscription, the Concierge service offers you pre-qualified, motivated, and interview-ready candidates.</p>
+                <p class="mb-8 text-base leading-8 text-gray-600 sm:text-[1.1rem]">We combine process automation, artificial intelligence and human support in a full HR-as-a-Service type service, specially designed for SMEs that want to hire efficiently.</p>
+                <a href="#contact" class="inline-block rounded-xl bg-indigo-500 px-8 py-4 text-center text-base font-semibold text-white shadow-[0_4px_14px_rgba(99,102,241,0.4)] transition hover:-translate-y-0.5 hover:bg-indigo-600 hover:shadow-[0_6px_20px_rgba(99,102,241,0.5)]">Discover how ROCMAN works for your business</a>
             </div>
-            <div class="benefits-grid">
-                <div class="benefit-card">
-                    <div class="benefit-number">01</div>
-                    <h3>AI-Powered Screening</h3>
-                    <p>Intelligent algorithms match candidates to your requirements automatically.</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-number">02</div>
-                    <h3>Pre-Qualified Candidates</h3>
-                    <p>Access a pool of vetted candidates ready for your specific roles.</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-number">03</div>
-                    <h3>Dedicated Support</h3>
-                    <p>Personal HR consultant to guide you through the process.</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-number">04</div>
-                    <h3>Cost Effective</h3>
-                    <p>Fixed subscription model with no hidden fees or surprises.</p>
+            <div class="order-first flex items-center justify-center md:order-last">
+                <div class="animate-bounce [animation-duration:6s] [animation-iteration-count:infinite] [animation-timing-function:ease-in-out]">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=800&fit=crop" alt="Analytics Dashboard" class="h-auto w-full max-w-[280px] rounded-3xl shadow-[0_12px_32px_rgba(0,0,0,0.1)] sm:max-w-[350px] lg:max-w-[500px]">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials">
-        <div class="container">
-            <div class="section-header">
-                <h2>What Our Clients Say</h2>
-                <p>Join the companies growing with us</p>
+    <section id="benefits" class="bg-white py-16 md:py-20 lg:py-28">
+        <div class="mx-auto w-full max-w-[1100px] px-6">
+            <div class="mb-12 text-center md:mb-16 lg:mb-[4.5rem]">
+                <h2 class="mb-3 text-3xl font-bold tracking-[-0.5px] text-[#1e1b4b] sm:text-4xl lg:text-[2.8rem]">Why Choose ROCMAN?</h2>
+                <p class="mx-auto max-w-[600px] text-base text-gray-600 sm:text-lg">The smarter way to recruit for your business</p>
             </div>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-company">Pearl Code</div>
-                    <div class="testimonial-author">@Mila</div>
-                    <p>"I want to thank the Rocman team for support in the recruitment process. In parallel, I worked with 3 other recruitment agencies and Rocman generated the most candidates. Special thanks to Alina who was very receptive to all feedback. Minimum resources and maximum results, highly recommend!"</p>
+            <div class="grid gap-6 md:grid-cols-2">
+                <div class="rounded-2xl border border-indigo-100 bg-white p-8 shadow-[0_4px_12px_rgba(0,0,0,0.08)] transition hover:-translate-y-1 hover:shadow-[0_12px_32px_rgba(0,0,0,0.1)]">
+                    <div class="mb-4 text-5xl font-extrabold tracking-[-2px] text-indigo-500/20 sm:text-[3.5rem]">01</div>
+                    <h3 class="mb-4 text-xl font-semibold text-[#1e1b4b] sm:text-[1.4rem]">AI-Powered Screening</h3>
+                    <p class="text-gray-600">Intelligent algorithms match candidates to your requirements automatically.</p>
                 </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-company">Zevet One SRL</div>
-                    <div class="testimonial-author">@Dan</div>
-                    <p>"We have worked with Rocman for their services and I can say that they helped me a lot in the recruitment process, facilitating the rapid closing of more positions. Their professionalism and efficiency were essential for our recruitment success."</p>
+                <div class="rounded-2xl border border-indigo-100 bg-white p-8 shadow-[0_4px_12px_rgba(0,0,0,0.08)] transition hover:-translate-y-1 hover:shadow-[0_12px_32px_rgba(0,0,0,0.1)]">
+                    <div class="mb-4 text-5xl font-extrabold tracking-[-2px] text-indigo-500/20 sm:text-[3.5rem]">02</div>
+                    <h3 class="mb-4 text-xl font-semibold text-[#1e1b4b] sm:text-[1.4rem]">Pre-Qualified Candidates</h3>
+                    <p class="text-gray-600">Access a pool of vetted candidates ready for your specific roles.</p>
                 </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-company">Sunprints_1</div>
-                    <div class="testimonial-author">@Veaceslav</div>
-                    <p>"We have collaborated with Rocman for some time and our experience was very good. Initially, we hired two people for Customer Relations Manager position, then we filled two spots for Assistant Operator. We confidently recommend Rocman's services due to their professionalism and adaptability."</p>
+                <div class="rounded-2xl border border-indigo-100 bg-white p-8 shadow-[0_4px_12px_rgba(0,0,0,0.08)] transition hover:-translate-y-1 hover:shadow-[0_12px_32px_rgba(0,0,0,0.1)]">
+                    <div class="mb-4 text-5xl font-extrabold tracking-[-2px] text-indigo-500/20 sm:text-[3.5rem]">03</div>
+                    <h3 class="mb-4 text-xl font-semibold text-[#1e1b4b] sm:text-[1.4rem]">Dedicated Support</h3>
+                    <p class="text-gray-600">Personal HR consultant to guide you through the process.</p>
                 </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-company">XY.md</div>
-                    <div class="testimonial-author">@Renata</div>
-                    <p>"Dear Alina, I have been wanting to write to you and personally thank you for all the support provided during period we collaborated. I appreciated not only your professionalism, but also your openness and your involvement. We managed to better understand what works for XY, and your contribution was greatly appreciated."</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Stats Details Section -->
-    <section class="stats-details">
-        <div class="container">
-            <div class="stats-details-grid">
-                <div class="stat-detail-card">
-                    <div class="stat-detail-number">24</div>
-                    <div class="stat-detail-label">Completed Recruitments</div>
-                </div>
-                <div class="stat-detail-card">
-                    <div class="stat-detail-number">17</div>
-                    <div class="stat-detail-label">Partner Companies</div>
-                </div>
-                <div class="stat-detail-card">
-                    <div class="stat-detail-number">2,505</div>
-                    <div class="stat-detail-label">Active Candidates</div>
-                </div>
-                <div class="stat-detail-card">
-                    <div class="stat-detail-number">202</div>
-                    <div class="stat-detail-label">Scheduled Interviews</div>
+                <div class="rounded-2xl border border-indigo-100 bg-white p-8 shadow-[0_4px_12px_rgba(0,0,0,0.08)] transition hover:-translate-y-1 hover:shadow-[0_12px_32px_rgba(0,0,0,0.1)]">
+                    <div class="mb-4 text-5xl font-extrabold tracking-[-2px] text-indigo-500/20 sm:text-[3.5rem]">04</div>
+                    <h3 class="mb-4 text-xl font-semibold text-[#1e1b4b] sm:text-[1.4rem]">Cost Effective</h3>
+                    <p class="text-gray-600">Fixed subscription model with no hidden fees or surprises.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Blog Section -->
-    <section id="blog" class="blog">
-        <div class="container">
-            <div class="section-header">
-                <h2>Blog & Resources</h2>
-                <p>Expert insights on recruitment and HR</p>
+    <section id="testimonials" class="bg-gray-50 py-16 md:py-20 lg:py-28">
+        <div class="mx-auto w-full max-w-[1100px] px-6">
+            <div class="mb-12 text-center md:mb-16 lg:mb-[4.5rem]">
+                <h2 class="mb-3 text-3xl font-bold tracking-[-0.5px] text-[#1e1b4b] sm:text-4xl lg:text-[2.8rem]">What Our Clients Say</h2>
+                <p class="mx-auto max-w-[600px] text-base text-gray-600 sm:text-lg">Join the companies growing with us</p>
             </div>
-            <div class="blog-grid">
-                <div class="blog-card">
-                    <div class="blog-icon">
-                        <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=200&h=200&fit=crop" alt="Candidate Profile" class="blog-img">
-                    </div>
-                    <h3>The Ideal Candidate Profile</h3>
-                    <p>The ideal candidate profile is the main tool that guides the recruitment and selection process to hire the person who possesses the necessary competencies for the job.</p>
-                    <a href="#" class="blog-link">Read More →</a>
+            <div class="grid gap-6 lg:grid-cols-2">
+                <div class="rounded-2xl bg-white p-8 shadow-[0_4px_12px_rgba(0,0,0,0.08)] transition hover:-translate-y-1 hover:shadow-[0_12px_32px_rgba(0,0,0,0.1)]">
+                    <div class="mb-2 text-[1.1rem] font-bold text-indigo-500">Pearl Code</div>
+                    <div class="mb-4 text-sm italic text-gray-400">@Mila</div>
+                    <p class="italic text-gray-600">"I want to thank the Rocman team for support in the recruitment process. In parallel, I worked with 3 other recruitment agencies and Rocman generated the most candidates. Special thanks to Alina who was very receptive to all feedback. Minimum resources and maximum results, highly recommend!"</p>
                 </div>
-                <div class="blog-card">
-                    <div class="blog-icon">
-                        <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=200&h=200&fit=crop" alt="Recruitment Methods" class="blog-img">
-                    </div>
-                    <h3>10 Recruitment Methods That Increase the Number of Candidates</h3>
-                    <p>Recruitment involves the activity of searching and attracting candidates. This process is coordinated by the Human Resources department and plays a crucial role in organizational development.</p>
-                    <a href="#" class="blog-link">Read More →</a>
+                <div class="rounded-2xl bg-white p-8 shadow-[0_4px_12px_rgba(0,0,0,0.08)] transition hover:-translate-y-1 hover:shadow-[0_12px_32px_rgba(0,0,0,0.1)]">
+                    <div class="mb-2 text-[1.1rem] font-bold text-indigo-500">Zevet One SRL</div>
+                    <div class="mb-4 text-sm italic text-gray-400">@Dan</div>
+                    <p class="italic text-gray-600">"We have worked with Rocman for their services and I can say that they helped me a lot in the recruitment process, facilitating the rapid closing of more positions. Their professionalism and efficiency were essential for our recruitment success."</p>
                 </div>
-                <div class="blog-card">
-                    <div class="blog-icon">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=200&h=200&fit=crop" alt="KPIs" class="blog-img">
-                    </div>
-                    <h3>Using KPIs in the Recruitment Process</h3>
-                    <p>Recruitment is a complex process that involves both data processing and candidate evaluation. KPIs help measure performance and ensure effective and appropriate recruitment processes.</p>
-                    <a href="#" class="blog-link">Read More →</a>
+                <div class="rounded-2xl bg-white p-8 shadow-[0_4px_12px_rgba(0,0,0,0.08)] transition hover:-translate-y-1 hover:shadow-[0_12px_32px_rgba(0,0,0,0.1)]">
+                    <div class="mb-2 text-[1.1rem] font-bold text-indigo-500">Sunprints_1</div>
+                    <div class="mb-4 text-sm italic text-gray-400">@Veaceslav</div>
+                    <p class="italic text-gray-600">"We have collaborated with Rocman for some time and our experience was very good. Initially, we hired two people for Customer Relations Manager position, then we filled two spots for Assistant Operator. We confidently recommend Rocman's services due to their professionalism and adaptability."</p>
+                </div>
+                <div class="rounded-2xl bg-white p-8 shadow-[0_4px_12px_rgba(0,0,0,0.08)] transition hover:-translate-y-1 hover:shadow-[0_12px_32px_rgba(0,0,0,0.1)]">
+                    <div class="mb-2 text-[1.1rem] font-bold text-indigo-500">XY.md</div>
+                    <div class="mb-4 text-sm italic text-gray-400">@Renata</div>
+                    <p class="italic text-gray-600">"Dear Alina, I have been wanting to write to you and personally thank you for all the support provided during period we collaborated. I appreciated not only your professionalism, but also your openness and your involvement. We managed to better understand what works for XY, and your contribution was greatly appreciated."</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Team Section -->
-    <section class="team">
-        <div class="container">
-            <div class="section-header">
-                <h2>Hello, we are the ROCMAN team</h2>
-                <p>Combining technology with personalized support, you get a complete experience that saves time and money by helping you find the right people.</p>
-            </div>
-            <div class="team-grid">
-                <div class="team-card">
-                    <div class="team-avatar">
-                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&h=200&fit=crop" alt="Alina" class="team-img">
-                    </div>
-                    <h3>Alina</h3>
-                    <p>HR Consultant</p>
+    <section class="bg-indigo-600 py-14 md:py-20">
+        <div class="mx-auto w-full max-w-[1100px] px-6">
+            <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+                <div class="rounded-2xl bg-white/10 p-8 text-center backdrop-blur">
+                    <div class="mb-3 text-5xl font-extrabold tracking-[-2px] text-white sm:text-[4rem]">24</div>
+                    <div class="text-base font-medium text-white/95">Completed Recruitments</div>
                 </div>
-                <div class="team-card">
-                    <div class="team-avatar">
-                        <img src="img/vlad.jpg" alt="Vlad" class="team-img">
-                    </div>
-                    <h3>Vlad</h3>
-                    <p>Technical Lead</p>
+                <div class="rounded-2xl bg-white/10 p-8 text-center backdrop-blur">
+                    <div class="mb-3 text-5xl font-extrabold tracking-[-2px] text-white sm:text-[4rem]">17</div>
+                    <div class="text-base font-medium text-white/95">Partner Companies</div>
                 </div>
-                <div class="team-card">
-                    <div class="team-avatar">
-                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&h=200&fit=crop" alt="Maria" class="team-img">
-                    </div>
-                    <h3>Maria</h3>
-                    <p>Customer Success</p>
+                <div class="rounded-2xl bg-white/10 p-8 text-center backdrop-blur">
+                    <div class="mb-3 text-5xl font-extrabold tracking-[-2px] text-white sm:text-[4rem]">2,505</div>
+                    <div class="text-base font-medium text-white/95">Active Candidates</div>
+                </div>
+                <div class="rounded-2xl bg-white/10 p-8 text-center backdrop-blur">
+                    <div class="mb-3 text-5xl font-extrabold tracking-[-2px] text-white sm:text-[4rem]">202</div>
+                    <div class="text-base font-medium text-white/95">Scheduled Interviews</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2>Get Started Today</h2>
-                <p>Join our community to receive essential recruitment news</p>
+    <section id="blog" class="bg-white py-16 md:py-20 lg:py-28">
+        <div class="mx-auto w-full max-w-[1100px] px-6">
+            <div class="mb-12 text-center md:mb-16 lg:mb-[4.5rem]">
+                <h2 class="mb-3 text-3xl font-bold tracking-[-0.5px] text-[#1e1b4b] sm:text-4xl lg:text-[2.8rem]">Blog &amp; Resources</h2>
+                <p class="mx-auto max-w-[600px] text-base text-gray-600 sm:text-lg">Expert insights on recruitment and HR</p>
             </div>
-            <div class="contact-wrapper">
-                <div class="contact-info">
-                    <h3>Contact Us</h3>
-                    <p>Ready to transform your recruitment process? Get in touch with our team.</p>
-                    
-                    <div class="info-item">
-                        <div class="info-icon">
-                            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=100&h=100&fit=crop" alt="Email" class="info-img">
-                        </div>
-                        <div>
-                            <strong>Email</strong>
-                            <p>contact@rocman.org</p>
-                        </div>
+            <div class="grid gap-6 lg:grid-cols-3">
+                <div class="rounded-2xl border border-indigo-100 bg-white p-8 shadow-[0_4px_12px_rgba(0,0,0,0.08)] transition hover:-translate-y-1 hover:shadow-[0_12px_32px_rgba(0,0,0,0.1)]">
+                    <div class="mb-5"><img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=200&h=200&fit=crop" alt="Candidate Profile" class="h-20 w-20 rounded-xl object-cover shadow-sm"></div>
+                    <h3 class="mb-4 text-xl font-semibold leading-7 text-[#1e1b4b]">The Ideal Candidate Profile</h3>
+                    <p class="mb-7 text-gray-600">The ideal candidate profile is the main tool that guides the recruitment and selection process to hire the person who possesses the necessary competencies for the job.</p>
+                    <a href="#" class="text-sm font-semibold text-indigo-500 transition hover:text-indigo-600">Read More -&gt;</a>
+                </div>
+                <div class="rounded-2xl border border-indigo-100 bg-white p-8 shadow-[0_4px_12px_rgba(0,0,0,0.08)] transition hover:-translate-y-1 hover:shadow-[0_12px_32px_rgba(0,0,0,0.1)]">
+                    <div class="mb-5"><img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=200&h=200&fit=crop" alt="Recruitment Methods" class="h-20 w-20 rounded-xl object-cover shadow-sm"></div>
+                    <h3 class="mb-4 text-xl font-semibold leading-7 text-[#1e1b4b]">10 Recruitment Methods That Increase the Number of Candidates</h3>
+                    <p class="mb-7 text-gray-600">Recruitment involves the activity of searching and attracting candidates. This process is coordinated by the Human Resources department and plays a crucial role in organizational development.</p>
+                    <a href="#" class="text-sm font-semibold text-indigo-500 transition hover:text-indigo-600">Read More -&gt;</a>
+                </div>
+                <div class="rounded-2xl border border-indigo-100 bg-white p-8 shadow-[0_4px_12px_rgba(0,0,0,0.08)] transition hover:-translate-y-1 hover:shadow-[0_12px_32px_rgba(0,0,0,0.1)]">
+                    <div class="mb-5"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=200&h=200&fit=crop" alt="KPIs" class="h-20 w-20 rounded-xl object-cover shadow-sm"></div>
+                    <h3 class="mb-4 text-xl font-semibold leading-7 text-[#1e1b4b]">Using KPIs in the Recruitment Process</h3>
+                    <p class="mb-7 text-gray-600">Recruitment is a complex process that involves both data processing and candidate evaluation. KPIs help measure performance and ensure effective and appropriate recruitment processes.</p>
+                    <a href="#" class="text-sm font-semibold text-indigo-500 transition hover:text-indigo-600">Read More -&gt;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gray-50 py-16 md:py-20 lg:py-28">
+        <div class="mx-auto w-full max-w-[1100px] px-6">
+            <div class="mb-12 text-center md:mb-16 lg:mb-[4.5rem]">
+                <h2 class="mb-3 text-3xl font-bold tracking-[-0.5px] text-[#1e1b4b] sm:text-4xl lg:text-[2.8rem]">Hello, we are the ROCMAN team</h2>
+                <p class="mx-auto max-w-[700px] text-base text-gray-600 sm:text-lg">Combining technology with personalized support, you get a complete experience that saves time and money by helping you find the right people.</p>
+            </div>
+            <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                <div class="rounded-2xl bg-white p-8 text-center shadow-[0_4px_12px_rgba(0,0,0,0.08)] transition hover:-translate-y-1 hover:shadow-[0_12px_32px_rgba(0,0,0,0.1)]">
+                    <div class="mb-5"><img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&h=200&fit=crop" alt="Alina" class="mx-auto h-28 w-28 rounded-full object-cover shadow-md sm:h-[120px] sm:w-[120px]"></div>
+                    <h3 class="mb-2 text-xl font-semibold text-[#1e1b4b]">Alina</h3>
+                    <p class="font-medium text-gray-400">HR Consultant</p>
+                </div>
+                <div class="rounded-2xl bg-white p-8 text-center shadow-[0_4px_12px_rgba(0,0,0,0.08)] transition hover:-translate-y-1 hover:shadow-[0_12px_32px_rgba(0,0,0,0.1)]">
+                    <div class="mb-5"><img src="img/vlad.jpg" alt="Vlad" class="mx-auto h-28 w-28 rounded-full object-cover shadow-md sm:h-[120px] sm:w-[120px]"></div>
+                    <h3 class="mb-2 text-xl font-semibold text-[#1e1b4b]">Vlad</h3>
+                    <p class="font-medium text-gray-400">Technical Lead</p>
+                </div>
+                <div class="rounded-2xl bg-white p-8 text-center shadow-[0_4px_12px_rgba(0,0,0,0.08)] transition hover:-translate-y-1 hover:shadow-[0_12px_32px_rgba(0,0,0,0.1)] sm:col-span-2 lg:col-span-1">
+                    <div class="mb-5"><img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&h=200&fit=crop" alt="Maria" class="mx-auto h-28 w-28 rounded-full object-cover shadow-md sm:h-[120px] sm:w-[120px]"></div>
+                    <h3 class="mb-2 text-xl font-semibold text-[#1e1b4b]">Maria</h3>
+                    <p class="font-medium text-gray-400">Customer Success</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-white py-16 md:py-20 lg:py-28">
+        <div class="mx-auto w-full max-w-[1100px] px-6">
+            <div class="mb-12 text-center md:mb-16 lg:mb-[4.5rem]">
+                <h2 class="mb-3 text-3xl font-bold tracking-[-0.5px] text-[#1e1b4b] sm:text-4xl lg:text-[2.8rem]">Get Started Today</h2>
+                <p class="mx-auto max-w-[600px] text-base text-gray-600 sm:text-lg">Join our community to receive essential recruitment news</p>
+            </div>
+            <div class="grid gap-12 md:grid-cols-2 md:gap-20">
+                <div>
+                    <h3 class="mb-3 text-3xl font-bold text-[#1e1b4b]">Contact Us</h3>
+                    <p class="mb-10 text-gray-600">Ready to transform your recruitment process? Get in touch with our team.</p>
+
+                    <div class="mb-8 flex items-start gap-5 max-sm:flex-col max-sm:items-center max-sm:text-center">
+                        <div class="h-14 w-14 shrink-0 overflow-hidden rounded-full bg-indigo-100"><img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=100&h=100&fit=crop" alt="Email" class="h-14 w-14 object-cover"></div>
+                        <div><strong class="mb-1 block font-semibold text-[#1e1b4b]">Email</strong><p class="text-gray-600">contact@rocman.org</p></div>
                     </div>
-                    
-                    <div class="info-item">
-                        <div class="info-icon">
-                            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f7a07d?w=100&h=100&fit=crop" alt="Phone" class="info-img">
-                        </div>
-                        <div>
-                            <strong>Phone</strong>
-                            <p>+373 68 352 111</p>
-                        </div>
+                    <div class="mb-8 flex items-start gap-5 max-sm:flex-col max-sm:items-center max-sm:text-center">
+                        <div class="h-14 w-14 shrink-0 overflow-hidden rounded-full bg-indigo-100"><img src="https://images.unsplash.com/photo-1556742049-0cfed4f7a07d?w=100&h=100&fit=crop" alt="Phone" class="h-14 w-14 object-cover"></div>
+                        <div><strong class="mb-1 block font-semibold text-[#1e1b4b]">Phone</strong><p class="text-gray-600">+373 68 352 111</p></div>
                     </div>
-                    
-                    <div class="info-item">
-                        <div class="info-icon">
-                            <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=100&h=100&fit=crop" alt="Location" class="info-img">
-                        </div>
-                        <div>
-                            <strong>Location</strong>
-                            <p>Moldova</p>
-                        </div>
+                    <div class="flex items-start gap-5 max-sm:flex-col max-sm:items-center max-sm:text-center">
+                        <div class="h-14 w-14 shrink-0 overflow-hidden rounded-full bg-indigo-100"><img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=100&h=100&fit=crop" alt="Location" class="h-14 w-14 object-cover"></div>
+                        <div><strong class="mb-1 block font-semibold text-[#1e1b4b]">Location</strong><p class="text-gray-600">Moldova</p></div>
                     </div>
                 </div>
 
-                <div class="contact-form">
-                    <h3>Request a Demo</h3>
+                <div>
+                    <h3 class="mb-3 text-3xl font-bold text-[#1e1b4b]">Request a Demo</h3>
                     <form>
-                        <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        <div class="mb-7">
+                            <label for="name" class="mb-2 block text-sm font-semibold text-[#1e1b4b]">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name" required class="w-full rounded-xl border-2 border-indigo-100 bg-gray-50 px-4 py-4 text-base transition placeholder:text-gray-400 focus:border-indigo-500 focus:bg-white focus:outline-none focus:ring-4 focus:ring-indigo-100">
                         </div>
-                        
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                        <div class="mb-7">
+                            <label for="email" class="mb-2 block text-sm font-semibold text-[#1e1b4b]">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com" required class="w-full rounded-xl border-2 border-indigo-100 bg-gray-50 px-4 py-4 text-base transition placeholder:text-gray-400 focus:border-indigo-500 focus:bg-white focus:outline-none focus:ring-4 focus:ring-indigo-100">
                         </div>
-                        
-                        <div class="form-group">
-                            <label for="company">Company Name</label>
-                            <input type="text" id="company" name="company" placeholder="Your Company">
+                        <div class="mb-7">
+                            <label for="company" class="mb-2 block text-sm font-semibold text-[#1e1b4b]">Company Name</label>
+                            <input type="text" id="company" name="company" placeholder="Your Company" class="w-full rounded-xl border-2 border-indigo-100 bg-gray-50 px-4 py-4 text-base transition placeholder:text-gray-400 focus:border-indigo-500 focus:bg-white focus:outline-none focus:ring-4 focus:ring-indigo-100">
                         </div>
-                        
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="4" placeholder="Tell us about your recruitment needs..."></textarea>
+                        <div class="mb-7">
+                            <label for="message" class="mb-2 block text-sm font-semibold text-[#1e1b4b]">Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Tell us about your recruitment needs..." class="min-h-[120px] w-full resize-y rounded-xl border-2 border-indigo-100 bg-gray-50 px-4 py-4 text-base transition placeholder:text-gray-400 focus:border-indigo-500 focus:bg-white focus:outline-none focus:ring-4 focus:ring-indigo-100"></textarea>
                         </div>
-                        
-                        <button type="submit" class="btn btn-submit">Request Demo</button>
+                        <button type="submit" class="w-full rounded-xl bg-indigo-500 px-6 py-4 text-base font-semibold text-white shadow-[0_4px_14px_rgba(99,102,241,0.4)] transition hover:-translate-y-0.5 hover:bg-indigo-600 hover:shadow-[0_6px_20px_rgba(99,102,241,0.5)]">Request Demo</button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <h3>ROCMAN</h3>
-                    <p>The first HR-as-a-Service built for SMEs. Automate hiring and grow your team without internal HR.</p>
+    <footer class="bg-slate-900 px-0 py-14 text-white md:pb-8">
+        <div class="mx-auto w-full max-w-[1100px] px-6">
+            <div class="mb-14 grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+                <div>
+                    <h3 class="mb-5 text-[1.6rem] font-bold">ROCMAN</h3>
+                    <p class="text-sm leading-8 text-white/75">The first HR-as-a-Service built for SMEs. Automate hiring and grow your team without internal HR.</p>
                 </div>
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#how-it-works">How It Works</a></li>
-                        <li><a href="#benefits">Benefits</a></li>
-                        <li><a href="#testimonials">Testimonials</a></li>
-                        <li><a href="#blog">Blog</a></li>
+                <div>
+                    <h4 class="mb-5 text-[1.1rem] font-semibold">Quick Links</h4>
+                    <ul class="space-y-2 text-sm text-white/75">
+                        <li><a href="#home" class="transition hover:text-white">Home</a></li>
+                        <li><a href="#how-it-works" class="transition hover:text-white">How It Works</a></li>
+                        <li><a href="#benefits" class="transition hover:text-white">Benefits</a></li>
+                        <li><a href="#testimonials" class="transition hover:text-white">Testimonials</a></li>
+                        <li><a href="#blog" class="transition hover:text-white">Blog</a></li>
                     </ul>
                 </div>
-                <div class="footer-links">
-                    <h4>Resources</h4>
-                    <ul>
-                        <li><a href="#">Documentation</a></li>
-                        <li><a href="#">API</a></li>
-                        <li><a href="#">Support</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li>
+                <div>
+                    <h4 class="mb-5 text-[1.1rem] font-semibold">Resources</h4>
+                    <ul class="space-y-2 text-sm text-white/75">
+                        <li><a href="#" class="transition hover:text-white">Documentation</a></li>
+                        <li><a href="#" class="transition hover:text-white">API</a></li>
+                        <li><a href="#" class="transition hover:text-white">Support</a></li>
+                        <li><a href="#" class="transition hover:text-white">Privacy Policy</a></li>
+                        <li><a href="#" class="transition hover:text-white">Terms of Service</a></li>
                     </ul>
                 </div>
-                <div class="footer-social">
-                    <h4>Connect</h4>
-                    <div class="social-links">
-                        <a href="#">LinkedIn</a>
-                        <a href="#">Twitter</a>
-                        <a href="#">Facebook</a>
+                <div>
+                    <h4 class="mb-5 text-[1.1rem] font-semibold">Connect</h4>
+                    <div class="flex flex-col gap-2 text-sm text-white/75">
+                        <a href="#" class="transition hover:text-white">LinkedIn</a>
+                        <a href="#" class="transition hover:text-white">Twitter</a>
+                        <a href="#" class="transition hover:text-white">Facebook</a>
                     </div>
                 </div>
             </div>
-            <div class="footer-bottom">
+            <div class="border-t border-white/10 pt-10 text-center text-sm text-white/70">
                 <p>&copy; 2026 ROCMAN. All rights reserved. HR-as-a-Service for SMEs.</p>
             </div>
         </div>
     </footer>
 
-    <!-- CSS-Only Mascot -->
     <div class="mascot">
         <div class="mascot-tooltip">Hi! I'm ROCBot - your HR assistant! 🤖</div>
         <div class="mascot-body">
@@ -427,9 +370,44 @@
         <div class="mascot-shadow"></div>
     </div>
 
-    <!-- Mobile-only sticky CTA -->
-    <div class="mobile-sticky-cta mobile-only">
-        <a href="#contact" class="btn btn-primary">Start Free Trial</a>
+    <div class="fixed bottom-0 left-0 right-0 z-40 bg-white p-4 shadow-[0_-4px_20px_rgba(0,0,0,0.1)] md:hidden">
+        <a href="#contact" class="mx-auto block w-full max-w-[400px] rounded-xl bg-indigo-500 px-6 py-4 text-center text-base font-semibold text-white shadow-[0_4px_14px_rgba(99,102,241,0.4)] transition hover:bg-indigo-600">Start Free Trial</a>
     </div>
+
+    <script>
+        window.tailwind = window.tailwind || {};
+        window.tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            DEFAULT: '#6366f1',
+                            dark: '#4f46e5',
+                            light: '#e0e7ff'
+                        },
+                        ink: {
+                            dark: '#1e1b4b',
+                            medium: '#4b5563',
+                            light: '#9ca3af'
+                        }
+                    },
+                    boxShadow: {
+                        soft: '0 1px 3px rgba(0, 0, 0, 0.08)',
+                        card: '0 4px 12px rgba(0, 0, 0, 0.08)',
+                        lift: '0 12px 32px rgba(0, 0, 0, 0.1)'
+                    },
+                    borderRadius: {
+                        soft: '12px',
+                        card: '16px',
+                        panel: '24px'
+                    },
+                    backgroundImage: {
+                        'hero-glow': 'linear-gradient(135deg, #fdf4ff 0%, #ede9fe 50%, #e0e7ff 100%)'
+                    }
+                }
+            }
+        };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
 </body>
 </html>
