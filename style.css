@@ -174,7 +174,7 @@
 }
 
 .hero-visual {
-    animation: float 6s ease-in-out infinite;
+    animation: none;
 }
 
 .hero-img {
@@ -328,7 +328,7 @@
 }
 
 .platform-display {
-    animation: float 6s ease-in-out infinite;
+    animation: none;
 }
 
 .platform-img {
